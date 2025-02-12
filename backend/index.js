@@ -14,7 +14,7 @@ app.use(cors());
 app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 
-mongoose.connect("mongodb+srv://dinusha_nawarathne:Dinuser24@cluster2.cwd1c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2")
+mongoose.connect("mongodb+srv://dinusha_nawarathne:@cluster2.cwd1c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2")
 .then(() => console.log("MongoDB connection successful"))
 .catch((err) => console.log("MongoDB connection error:", err));
 
